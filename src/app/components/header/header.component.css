@@ -1,0 +1,24 @@
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    color:white;
+    cursor:pointer
+}
+h4{
+    color: white;
+}
+p{
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+}
+hr{
+    background-color:white
+}
+div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}

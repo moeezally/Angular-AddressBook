@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        
+        <h1 [routerLink]="['/home']">{{title}}</h1>
+        <a role="button" id="addNewRecord" class="btn btn-info" [routerLink]="['/addNewRecord']" (click)="toggleDrawer()">Add New Address</a>
+        
+    </header>    
+   
+    <hr>
+</html>
+<router-outlet></router-outlet>
+

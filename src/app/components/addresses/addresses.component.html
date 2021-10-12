@@ -1,0 +1,30 @@
+
+<div id="header2">
+    <h4>Address List</h4>
+    <app-button id="toggle" [text]="toggle" class="btn-info" (btnClick)="toggleDrawer()"></app-button>   
+</div>
+
+
+<table id="addressItems" class="table table-hover table-striped">    
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let address of addresses">
+            <td>{{address.id}}</td>
+            <td>{{address.name}}</td>
+            <td>{{address.gender}}</td>
+            <td>{{address.city}}</td>
+            <td>{{address.country}}</td>
+            <td><button class="btn btn-sm btn-warning" (click)="onUpdate(address)" >Update </button> | <button class="btn btn-sm btn-danger" (click)="onDelete(address)"> Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+   
